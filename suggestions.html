@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Suggestion page</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="form">
+      <!--<ul class="tab-group">
+        <li class="tab active"><a href="#signup">Sign Up</a></li>
+        <li class="tab"><a href="#login">Log In</a></li>
+      </ul>-->
+
+      <div class="tab-content">
+        <div id="signup">
+          <h1>Suggestion Form</h1>
+          <form action="suggestions.php" method="post">
+            <div class="field-wrap" style="bgcolor:white;">
+             <!-- <p>
+                Choose the name of the NGO below<span class="req">*</span>
+
+            <input type="" name="ngoname" value="Childcare" checked>Childcare</br>
+			<input type="radio" name="ngoname" value="Anti Dowry Force">Anti Dowry Force </br>
+            <input type="radio" name="ngoname" value="ARV GROUP"> ARV GROUP</br>
+			</p>-->
+			<p>
+                Choose the name of the NGO <span class="req">* </span>
+      </p>
+			 <select name="ngo_name">
+			  <option value="Childcare">Childcare</option>
+			  <option value="Anti Dowry Force">Anti Dowry Force</option>
+			  <option value="ARV GROUP">ARV GROUP</option>
+			</select>
+
+            </div>
+			<div class="field-wrap">
+            <p>
+               Write your suggestion below:<span class="req">*</span>
+            </p></br>
+
+			<textarea name='txtarea' rows="10" cols="50" ></textarea>
+          </div>
+
+
+
+      <button type="submit" class="button button-block"/>Submit</button>
+    </form>
+  </div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
